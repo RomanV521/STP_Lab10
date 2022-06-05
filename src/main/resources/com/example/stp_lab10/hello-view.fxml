@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="314.0" prefWidth="291.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stp_lab10.Controller">
+<VBox alignment="CENTER" prefHeight="314.0" prefWidth="444.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stp_lab10.Controller">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
-      <Button mnemonicParsing="false" text="Button" />
-      <ChoiceBox prefWidth="150.0" />
-      <TableView prefHeight="129.0" prefWidth="251.0">
+      <Label text="Squares">
+         <VBox.margin>
+            <Insets bottom="-18.0" />
+         </VBox.margin>
+      </Label>
+      <TableView prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="73.5999755859375" text="C2" />
+          <TableColumn prefWidth="75.0" text="Side" />
+          <TableColumn prefWidth="75.0" text="Perimeter" />
+            <TableColumn prefWidth="75.0" text="Diagonal" />
+            <TableColumn prefWidth="75.0" text="Square" />
         </columns>
       </TableView>
-      <TreeTableView prefHeight="200.0" prefWidth="200.0">
+      <Label text="Prisms">
+         <VBox.margin>
+            <Insets bottom="-18.0" />
+         </VBox.margin>
+      </Label>
+      <TableView prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TreeTableColumn prefWidth="75.0" text="C1" />
-          <TreeTableColumn prefWidth="75.0" text="C2" />
+          <TableColumn prefWidth="75.0" text="Side" />
+          <TableColumn prefWidth="75.0" text="Height" />
+            <TableColumn prefWidth="75.0" text="Volume" />
+            <TableColumn prefWidth="82.40003967285156" text="Square Prism" />
+            <TableColumn prefWidth="93.60003662109375" text="Diagonal Prism" />
         </columns>
-      </TreeTableView>
+      </TableView>
    </children>
 </VBox>
